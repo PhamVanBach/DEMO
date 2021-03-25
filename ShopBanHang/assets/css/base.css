@@ -1,0 +1,49 @@
+:root {
+    --primary-color: #f6422e;
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    /*Trick de fontsize 62,5% thì 1rem  sẽ là 10px muốn để
+    font-size = 12 thì --> 1.2rem*/
+    font-size: 62.5%;
+    line-height: 2.7rem;
+    /*font sans-serif là chủng font chữ k chân, sẽ hiển thị
+    trong khi đợi font Roboto được tải về*/
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.grid{
+    width: 1200px;
+    max-width: 100%;/*giảm kích thước của màn hình về 1200*/
+    margin: 0 auto;/*Căn giữa khối khi nằm trong khối khác*/
+}
+
+.grid__full-width {
+    width: 100%;
+}
+
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;/*những thẻ được chứa cùng nằm trên 1 hàng ngang
+    nếu quá width của row sẽ nhảy xuống hàng*/
+}
+
+/* ================Animation==================== */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}

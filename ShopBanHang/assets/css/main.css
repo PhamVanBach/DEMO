@@ -1,0 +1,210 @@
+.header{
+    height: 120px;
+    background-image: linear-gradient(0, #ff6433, #f6402e);
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar__list{
+    list-style: none;
+    padding-left: 0px;
+    margin-top: 4px;
+    min-height: 26px;
+}
+
+.navbar__list-item{
+    margin: 0px 8px;
+    position: relative;
+}
+
+.navbar__list-item, 
+.navbar__item-link{
+    display: inline-block;
+    color: var(--white-color);
+    font-size: 1.3rem;
+    font-weight: 300;
+    text-decoration: none;  
+}
+
+.navbar__list-item, 
+.navbar__item-link,
+.navbar__list-icon-link{
+    display: inline-flex;
+    align-items: center;
+}
+
+.navbar__list-item:hover, 
+.navbar__item-link:hover,
+.navbar__list-icon-link:hover{
+    color: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+}
+
+.navbar__list-item--strong{
+    font-weight: 500;
+}
+
+/* pesudoclass */
+.navbar__list-item--separate::after{
+    content: "";
+    display: block;
+    position: absolute;
+    height: 16px;
+    border-left: 1px solid #fa8e82;
+    right: -9px;
+    top: 50%;
+    /* dùng tranform nó sẽ hiểu là 50% của height là 16/2 = 8px 
+    nên -50% sẽ quay ngược lên*/
+    transform: translateY(-50%);    
+}
+
+.navbar__list-icon-link{
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+.navbar__list-icon{
+    font-size: 1.7rem;
+    padding: 0 5px;
+}
+
+.navbar__item-title-no-pointer{
+    cursor: text;
+    color: var(--white-color);
+}
+
+
+/* ===============Header QR code======================== */
+
+.navbar__qr{
+    background-color: var(--white-color);
+    width: 180px;
+    position: absolute;
+    left: 0;
+    top: 118%;
+    border-radius: 2px;
+    display: none;
+    animation: fadeIn ease 0.3s;
+}
+
+.navbar__qr::before{
+    position: absolute;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 20px;
+    left: 0;
+    top: -16px
+}
+
+.navbar__qr-img{
+    width: 100%;
+    height: 100%;
+}
+
+.navbar__qr-apps{
+    display: flex;
+    justify-content: space-between;
+    /* width: 15px; */
+}
+
+.navbar__qr-link-download:nth-child(1){
+    margin-left: 11px;
+}
+
+.navbar__qr-link-download:nth-child(2){
+    margin-right: 11px;
+}
+
+.navbar__qr-download-app{
+    height: 17px;
+}
+
+
+/* Tức là khi hover vào thẻ li tức thẻ cha của navbar__qr thì navbar__qr mới hiện ra */
+.navbar__item-display-qr:hover .navbar__qr{
+    display: block;
+}
+
+/* ===============Header Notifications code======================== */
+
+.header__notify {
+    position: absolute;
+    top: 118%;
+    width: 404px;
+    right: 0;
+    border: 1px solid rgba(0, 0, 0, 0.09);
+    background-color: var(--white-color);
+}
+
+.header__notify-header h3{
+    height: 40px;
+    background-color: var(--white-color);
+    color: #999;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 40px;
+    margin: 0 0 0 12px;
+}
+
+.header__notify-list {
+    padding-left: 0;
+}
+
+.header__notify-item{
+    display: flex;
+}
+
+.header__notify-item:hover{
+    background-color: #f7f7f7;
+}
+
+/* Thong bao chua doc */
+.header__notify-item--viewed{
+    background-color: rgba(247, 70, 47, 0.1);
+}
+
+.header__notify-link {
+    display: flex;
+    padding: 12px;
+    text-decoration: none;
+    width: 100%;
+}
+
+.header__notify-img {
+    width: 48px;
+    object-fit: contain;
+}
+
+.header__notify-info {
+    margin-left: 12px;
+}
+
+.header__notify-info-name {
+    display: block;
+    color: var(--black-color);
+    line-height: 2rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.header__notify-descriptions {
+    display: block;
+    line-height: 3rem;
+    font-size: 1.6rem;
+    color: #bbb2af;
+}
+
+.header__notify-footer{
+    text-align: center;
+}
+
+.header__notify-footer-btn{
+    text-decoration: none;
+    text-align: center;
+    color: var(--text-color);
+    padding: 16px 
+}
