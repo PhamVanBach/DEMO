@@ -1,0 +1,39 @@
+:root {
+    --primary-color: #8dc63f;
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    /*Trick de fontsize 62,5% thì 1rem  sẽ là 10px muốn để
+    font-size = 12 thì --> 1.2rem*/
+    font-size: 62.5%;
+    line-height: 2.7rem;
+    /*font sans-serif là chủng font chữ k chân, sẽ hiển thị
+    trong khi đợi font Roboto được tải về*/
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.wrapper {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 974px;
+    margin: 0 auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}

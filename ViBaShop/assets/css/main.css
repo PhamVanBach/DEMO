@@ -1,0 +1,203 @@
+.top-nav{
+    width: 100%;
+    height: 97px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.09);
+    padding: 2rem 0;
+    font-weight: 400;
+}
+
+.top-nav__logo{
+    margin: 1rem 0.67rem 0 10rem;
+    padding: 0;
+}
+.top-nav__list{
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.top-nav__tools{
+    font-size: 1.5rem;
+    padding-top: 0.5rem;
+}
+
+.top-nav__link{
+    display: block;
+    border-radius: 50%;
+    width: 27px;
+    height: 27px;
+    padding: 0.2rem;
+    background: transparent;
+    border: 1px solid rgba(0, 0, 0, 1);
+    color: #666;
+}
+
+.top-nav__list-padding-top{
+    padding-top: 2rem;
+}
+/* number circle shopping step */
+
+.shopping-step{
+    background-color: #f1f1f1;
+    height: 1366px;
+    font-weight: 400;
+}
+
+.shopping-step__step1-number,
+.shopping-step__step2-number,
+.shopping-step__step3-number{
+    display: block;
+    border-radius: 50%;
+    width: 41px;
+    height: 41px;
+    padding: 8px;
+    font-size: 1.4rem;
+    background: #fff;
+    border: 1px solid var(--primary-color);
+    color: #666;
+    margin-left: 43%;
+}
+
+.shopping-step__step1-number{
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    margin-left: 35%;
+}
+
+.shopping-step__step3-number{
+    margin-left: 30%;
+}
+
+.shopping-step__step1,
+.shopping-step__step2,
+.shopping-step__step3{
+    text-align: center;
+}
+
+.shopping-step__padding-top{
+    padding: 0 0;
+    padding-top: 3.1rem;
+}
+
+.shopping-step__step1 > p,
+.shopping-step__step2 > p,
+.shopping-step__step3 > p{
+    margin-top: 1rem;
+    margin-bottom: 2.2rem;
+    font-size: 1rem;
+}
+
+
+
+.shopping-step__step1
+{
+    padding-left: 22rem;
+    /* margin-left: 43%; */
+}
+
+
+.shopping-step__step3{
+    padding-right: 22rem;
+}
+/* =================Nội dung giao hàng================== */
+.content-delivery{
+    height: 1227px;
+    margin: 0 3.4rem 2.8rem 2.1rem;
+    padding: 0 171px 0 196px;
+    background-color: var(--white-color);
+}
+
+.content-delivery__title{
+    padding-top: 2rem;
+    padding-bottom: 2.9rem;
+}
+
+/* Table product */
+
+.table__product-img{
+    height: 6.6rem;
+    width: 6.6rem;
+    background-color: #e1e1e1;
+    
+}
+
+.table__product-header > td {
+    color: #7f7f7f;
+    font-size: 1rem;
+    
+}
+
+.table__product-info > td{
+    color: var(--text-color);
+    font-weight: 600;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.table__product-td-price{
+    padding-right: 4rem !important;
+}
+
+.table__product-header > td:last-child {
+    text-align: right;
+    padding-right: 5.1rem;
+}
+
+.table__product-left{ 
+    text-align: left !important;
+    padding-left: 2rem !important;
+}
+
+.content-delivery__table-header{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.form__total-pay-right{
+    text-align: right;
+}
+
+.form__total-pay-minus{
+    color: red;
+}
+
+/* footer */
+footer {
+    line-height: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+h5 {
+    color: #4d8403;
+    padding-bottom: 2rem;
+}
+
+button[type=submit]{
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    font-size: 1.2rem;
+    border-radius: 0;
+}
+
+input[type=email]{
+    margin: 0.9rem 0;
+    width: 18.1rem;
+    height: 2.9rem;
+}
+
+.footer__contact-icon{
+    color: var(--primary-color);
+}
+
+/* button */
+.form_btn-center{
+    text-align: center !important;
+}
+
+.btn_size-l {
+    width: 22.6rem;
+    height: 3rem;
+}
+.btn_size-s {
+    width: 8.6rem;
+    height: 3rem;
+}
