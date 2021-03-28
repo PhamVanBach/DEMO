@@ -138,6 +138,7 @@
               </table>
               <!-- ===========END Tất cả số hàng cần giao============== -->
             </div>
+            <!-- ===========Form infor users============== -->
             <form class="row g-3 needs-validation"  validate>
               <div class="content-delivery__title">
                 <h4>HÌNH THỨC GIAO HÀNG</h4>
@@ -173,17 +174,17 @@
                     <!-- ===========Thông tin User============== -->
                     <tr style="border-bottom: hidden;">
                       <td>
-                        <div class="content-delivery__full-name">
-                          Họ tên*
+                        <div class="content-delivery__full-name content-delivery__star-valid">
+                          Họ tên
                         </div>
                       </td>
                       <td>
-                        <div class="form-row">
-                          <div class="form-group col-md-6">
+                        <div class="form-row row">
+                          <div class="form-group col-md-5 col-md-offset-2">
                             <input type="text" class="form-control" id="validationCustom01" value="" placeholder="Họ"
                               required>
                           </div>
-                          <div class="form-group col-md-6">
+                          <div class="form-group col-md-7">
                             <input type="text" class="form-control" id="validationCustom02" value="" placeholder="Tên"
                               required>
                           </div>
@@ -193,8 +194,8 @@
 
                     <tr style="border-bottom: hidden;">
                       <td>
-                        <div class="content-delivery__address flex-grow-1">
-                          Địa chỉ*
+                        <div class="content-delivery__address content-delivery__star-valid flex-grow-1">
+                          Địa chỉ
                         </div>
                       </td>
                       <td>
@@ -224,8 +225,8 @@
 
                     <tr style="border-bottom: hidden;">
                       <td>
-                        <div class="content-delivery__phone-number">
-                          Số điện thoại*
+                        <div class="content-delivery__phone-number content-delivery__star-valid">
+                          Số điện thoại
                         </div>
                       </td>
                       <td>
@@ -254,10 +255,10 @@
 
                   
 
-                    <tr class="content-delivery__table-header">
+                    <tr class="content-delivery__table-header ">
                       <td colspan="2" style="border-bottom: hidden;">
                         <!-- <div class="invalid-feedback"> -->
-                        <span>* Vui lòng kiểm tra tất cả thông tin một lần nữa</span>
+                        <span class="content-delivery__star-valid"> Vui lòng kiểm tra tất cả thông tin một lần nữa</span>
                         <!-- </div> -->
                       </td>
                     </tr>
@@ -338,6 +339,7 @@
                 <!-- ==========END Nội dung đơn hàng================ -->
               </div>
             </form>
+            <!-- ===========End Form infor users============== -->
           </div>
         </div>
       </section>

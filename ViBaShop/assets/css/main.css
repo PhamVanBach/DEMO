@@ -106,10 +106,16 @@
     background-color: var(--white-color);
 }
 
-.content-delivery__title{
-    padding-top: 2rem;
-    padding-bottom: 2.9rem;
+.content-delivery__star-valid::after{
+    content: "*";
+    color: red;
 }
+
+.content-delivery__title{
+    padding-top: 3.9rem;
+    padding-bottom: 2rem;
+}
+
 
 /* Table product */
 
