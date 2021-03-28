@@ -86,7 +86,17 @@
     font-size: 1rem;
 }
 
+.content-delivery__address{
+    padding-top: 1rem;
+}
 
+.content-delivery__address-item:first-child {
+    padding-top: 1rem;
+}
+
+.content-delivery__address-item{
+    padding-bottom: 1rem;
+}
 
 .shopping-step__step1
 {
