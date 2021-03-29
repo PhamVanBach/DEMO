@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./assets/css/base.css">
+  <link rel="stylesheet" href="./assets/css/_thanhtoan.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.2-web/css/all.min.css">
+  <!-- font roboto -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <!-- loai bo thuoc tinh mac dinh cua trinh duyet bang normalize libraries -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+    crossorigin="anonymous" />
+  <!-- boostrap cdn -->
+  <!-- Latest compiled and minified CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+</head>
+
+<body>
+  <!-- Shop ViBa -->
+  <div class="wrapper">
+    <header>
+      <nav class="top-nav">
+        <div class="container">
+          <div class="row d-flex justify-content-bettwen">
+            <div class="col-auto">
+              <a class="text-dark text-decoration-none" href=""><img src="./assets/img/logo.jpg" alt=""
+                  class="top-nav__logo"></a>
+            </div>
+            <div class="col-7 top-nav__list-padding-top">
+              <div class="top-nav__list d-flex">
+                <ul class="list-inline mx-auto justify-content-center">
+                  <li class="list-inline-item m-3"> <a class="top-nav__link text-dark text-decoration-none" href="">Trang chủ </a>
+                  </li>
+                  <li class="list-inline-item m-3"> <a class="top-nav__link text-dark text-decoration-none" href="">Triết lí kinh doanh</a></li>
+                  <li class="list-inline-item m-3"> <a class="top-nav__link text-dark text-decoration-none" href="">Triết lí sản phẩm</a></li>
+                  <li class="list-inline-item m-3"> <a class="top-nav__link text-dark text-decoration-none" href="">Sản phẩm</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-auto">
+              <div class="top-nav__tools d-flex">
+                <ul class="list-inline mx-auto justify-content-center">
+                  <li class="list-inline-item pt-4"> <a class="top-nav__link-icon text-dark text-decoration-none" href=""><i
+                        class="fas fa-map-marker-alt m-1"></i></a> </li>
+                  <li class="list-inline-item"> <a class="top-nav__link-icon text-dark text-decoration-none" href=""><i
+                        class="fas fa-search m-1"></i></a> </li>
+                  <li class="list-inline-item"> <a class="top-nav__link-icon text-dark text-decoration-none" href=""><i
+                        class="fas fa-user-circle m-1"></i></a> </li>
+                  <li class="list-inline-item"> <a class="top-nav__link-icon text-dark text-decoration-none" href=""><i
+                        class="fas fa-shopping-cart m-1"></i></a> </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="shopping-step">
+        <!-- ==========Step giao hàng================ -->
+        <div class="row shopping-step__padding-top">
+          <div class="col">
+            <div class="shopping-step__step1">
+              <span class="shopping-step__step1-number">
+                1
+              </span>
+              <p class="shopping-step__step1-text">Thông tin giao hàng</p>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="shopping-step__step2">
+              <span class="shopping-step__step2-number">
+                2
+              </span>
+              <p class="shopping-step__step2-text">Kiểm tra đơn hàng và thanh toán</p>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="shopping-step__step3">
+              <span class="shopping-step__step3-number">
+                3
+              </span>
+              <p class="shopping-step__step3-text">Hoàn tất đặt hàng</p>
+            </div>
+          </div>
+        </div>
+        <!-- ==========End Step giao hàng================ -->
+        <!-- form thong tin -->
+        <div class="container">
+          <div class="content-delivery">
+            <div class="content-delivery__title">
+              <h4>NỘI DUNG ĐƠN HÀNG</h4>
+            </div>
+            <div class="content-delivery__product">
+              <!-- ===========Tất cả số hàng cần giao============== -->
+              <table class="table align-middle">
+                <tbody>
+                  <tr>
+                    <th scope="row"></th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr class="table__product-header">
+                    <th class="col-1" scope="row"></th>
+                    <td class="col-auto" style="padding-left: 4rem">Sản phẩm</td>
+                    <td class="col-2">Số lượng</td>
+                    <td class="col-3">Giá tiền</td>
+
+                  </tr>
+
+                  <tr class="table__product-info">
+                    <th class="table__product-th" scope="row"><img src="" alt="" class="table__product-img"></th>
+                    <td class="table__product-td table__product-left">Tên sản phẩm</td>
+                    <td class="table__product-td">2</td>
+                    <td class="table__product-td-price">100.000 VNĐ</td>
+                  </tr>
+
+                  <tr class="table__product-info">
+                    <th class="table__product-th" scope="row"><img src="" alt="" class="table__product-img"></th>
+                    <td class="table__product-td table__product-left">Tên sản phẩm</td>
+                    <td class="table__product-td">2</td>
+                    <td class="table__product-td-price">100.000 VNĐ</td>
+                  </tr>
+                </tbody>
+              </table>
+              <!-- ===========END Tất cả số hàng cần giao============== -->
+            </div>
+            <!-- ===========Form infor users============== -->
+            <form class="row g-3 needs-validation" validate>
+              <div class="content-delivery__title">
+                <h4>HÌNH THỨC GIAO HÀNG</h4>
+              </div>
+
+              <div class="content__form-of-delivery">
+                <table class="table">
+                  <tbody>
+                    <tr>
+                      <th scope="row"></th>
+                      <td></td>
+                    </tr>
+
+                    <!-- =========== Hình thức giao hàng============== -->
+                    <tr class="content-delivery__table-header">
+                      <td class="col-4">
+                        <div class="form-check form-check-inline radio1">
+                          <input class="form-check-input btn-secondary active" type="radio" name="inlineRadioOptions"
+                            id="inlineRadio1" value="option1" checked>
+                          <label class="form-check-label" for="inlineRadio1">Địa chỉ giao hàng mặc định</label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                            value="option2">
+                          <label class="form-check-label" for="inlineRadio2">Thay đổi địa chỉ giao hàng</label>
+                        </div>
+                      </td>
+                    </tr>
+                    <!-- ===========END Hình thức giao hàng============== -->
+
+                    <!-- ===========Thông tin User============== -->
+                    <tr style="border-bottom: hidden;">
+                      <td>
+                        <div class="content-delivery__full-name content-delivery__star-valid">
+                          Họ tên
+                        </div>
+                      </td>
+                      <td>
+                        <div class="form-row row">
+                          <div class="form-group col-md-5 col-md-offset-2">
+                            <input type="text" class="form-control" id="validationCustom01" value="" placeholder="Họ"
+                              required>
+                          </div>
+                          <div class="form-group col-md-7">
+                            <input type="text" class="form-control" id="validationCustom02" value="" placeholder="Tên"
+                              required>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr style="border-bottom: hidden;">
+                      <td>
+                        <div class="content-delivery__address content-delivery__star-valid flex-grow-1">
+                          Địa chỉ
+                        </div>
+                      </td>
+                      <td>
+                        <div class="row-auto content-delivery__address-item">
+                          <select class="form-select" id="validationCustom04" required>
+                            <option selected disabled value="">Tỉnh/Thành phố</option>
+                            <option>...</option>
+                          </select>
+                        </div>
+                        <div class="row-auto content-delivery__address-item">
+                          <select class="form-select" id="validationCustom04" required>
+                            <option selected disabled value="">Quận/Huyện.</option>
+                            <option>...</option>
+                          </select>
+                        </div>
+                        <div class="row-auto content-delivery__address-item">
+                          <input type="text" class="form-control" id="validationCustom05"
+                            placeholder="Địa chỉ cụ thể(Số nhà, tên đường, tòa nhà,....)" required>
+                        </div>
+                        <div class="row-auto content-delivery__address-item">
+                          <input type="text" class="form-control" id="validationCustom05" placeholder="Phường/Xã"
+                            required>
+                        </div>
+                      </td>
+                    </tr>
+
+
+                    <tr style="border-bottom: hidden;">
+                      <td>
+                        <div class="content-delivery__phone-number content-delivery__star-valid">
+                          Số điện thoại
+                        </div>
+                      </td>
+                      <td>
+                        <div class="row-auto">
+                          <input type="text" class="form-control" id="validationCustom05" placeholder="0918988309"
+                            required>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <!-- ===========End Thông tin User============== -->
+
+                    <!-- =========== Đăng ký thành địa chỉ mặc địnhr============== -->
+                    <tr>
+                      <td></td>
+                      <td>
+                        <div class="form-check row-auto">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                          <label class="form-check-label font-weight-bold" style="font-size: 1rem;"
+                            for="flexCheckChecked">
+                            Đăng ký thành địa chỉ mặc định
+                          </label>
+                        </div>
+                      </td>
+                    </tr>
+                    <!-- ===========End Đăng ký thành địa chỉ mặc địnhr============== -->
+
+
+
+                    <tr class="content-delivery__table-header ">
+                      <td colspan="2" style="border-bottom: hidden;">
+                        <!-- <div class="invalid-feedback"> -->
+                        <span class="content-delivery__star-valid"> Vui lòng kiểm tra tất cả thông tin một lần
+                          nữa</span>
+                        <!-- </div> -->
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td colspan="2">
+                        <div class="content-delivery__title">
+                          <h4>PHƯƠNG THỨC GIAO HÀNG</h4>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr class="content-delivery__table-header">
+                      <td colspan="2" style="border-bottom: hidden;">
+                        <div class="form-check row-auto">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                          <label class="form-check-label" for="flexCheckChecked">
+                            Đăng ký thành địa chỉ mặc định
+                          </label>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td colspan="2">
+                        <div class="content-delivery__title">
+                          <h4>TỔNG THANH TOÁN</h4>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr style="border-bottom: hidden;">
+                      <td>
+                        <p>Tổng tiền sản phẩm</p>
+                      </td>
+                      <td>
+                        <p class="form__total-pay-right">VNĐ 100.000</p>
+                      </td>
+                    </tr>
+                    <tr style="border-bottom: hidden;">
+                      <td>
+                        <p>Phí vận chuyển</p>
+                      </td>
+                      <td>
+                        <p class="form__total-pay-right">VNĐ 100.000</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p>Giảm giá vận chuyển</p>
+                      </td>
+                      <td>
+                        <p class="form__total-pay-right form__total-pay-minus">- VNĐ 100.000</p>
+                      </td>
+                    </tr>
+
+
+                    <tr style="border-bottom: hidden;">
+                      <td>
+                        <div class="content-delivery__title">
+                          <h4>TỔNG TIỀN THANH TOÁN</h4>
+                        </div>
+                      </td>
+                      <td>
+                        <h4 class="form__total-pay-right content-delivery__title">VNĐ 100.000</h4>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td colspan="2" style="border-bottom: hidden;">
+                        <div class="form_btn-center">
+                          <button type="submit" class="btn btn_size-l">Xác nhận nội dung đơn hàng</button>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <!-- ==========END Nội dung đơn hàng================ -->
+              </div>
+            </form>
+            <!-- ===========End Form infor users============== -->
+          </div>
+        </div>
+      </section>
+      <!-- form thong tin -->
+      <!-- end main -->
+    </main>
+
+    <!-- ================footer hear=============================== -->
+    <footer class="bg-light text-center text-lg-start">
+      <!-- Grid container -->
+      <div class="container-fluid">
+        <div class="footer__content">
+          <!--Grid row-->
+          <div class="row">
+            <!--Grid column-->
+            <div class="col-3 p-4">
+              <div class="row">
+                <h5 class="text-uppercase">Liên Hệ</h5>
+                <div class="col-auto d-flex flex-column a">
+                  <div class="footer__contact-icon flex-grow-1">
+                    <i class="fas fa-map-marker-alt"></i>
+                  </div>
+                  <div class="footer__contact-icon ">
+                    <i class="fas fa-mobile-alt"></i>
+                  </div>
+
+                  <div class="footer__contact-icon ">
+                    <i class="fas fa-globe"></i>
+                  </div>
+
+                  <div class="footer__contact-icon ">
+                    <i class="far fa-envelope"></i>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="footer__contact-content">
+                    <ul class="list-unstyled mb-0">
+                      <li>
+                        <span>VĂN PHÒNG CHÍNH</span>
+                        <p>14/19/5/2 Đường Vi Ba, phường Thắng Nhi,
+                          thành phố Vũng Tàu, tỉnh Bà Rịa-Vũng Tàu, Việt Nam</p>
+                      </li>
+
+                      <li>
+                        <span>CHI NHÁNH TP.HCM</span>
+                        <p>125/30 đường Nguyễn Cửu Vân, P.17, Quận Bình thạnh,
+                          Tp.HCM, Việt Nam</p>
+                      </li>
+
+                      <li>
+                        <div>TRUNG TÂM ĐÀO TẠO & KHỞI NGHIỆP</div>
+                        <span>KHU VỰC PHÍA NAM:</span>
+                        <p>Lầu 4, 162 Nguyễn Văn Thủ, P.Đa Kao, Quận 1, Tp.HCM, Việt Nam</p>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col">
+                    <div class="footer__contact-content">
+                      <span>035 750 7272</span>
+                    </div>
+                  </div>
+
+                  <div class="col">
+                    <div class="footer__contact-content">
+                      <span>www.khoangtuoiviba.com</span>
+                    </div>
+                  </div>
+
+                  <div class="col">
+                    <div class="footer__contact-content">
+                      <span>sale@phuonglongnhien.vn</span>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-auto p-4">
+              <h5 class="text-uppercase mb-0">THÔNG TIN</h5>
+
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#!" class="text-dark text-decoration-none">Hệ thống phân phối</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-dark text-decoration-none">Cách đặt hàng</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-dark text-decoration-none">Chính Sách trả hàng</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-dark text-decoration-none">Chính sách bảo mật thông tin</a>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-auto p-4">
+              <h5 class="text-uppercase">SẢN PHẨM</h5>
+
+              <ul class="list-unstyled mb-0 pb-4">
+                <li>
+                  <a href="#!" class="text-dark text-decoration-none">SẢN PHẨM MỚI</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-dark text-decoration-none">SẢN PHẨM BÁN CHẠY</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-dark text-decoration-none">SẢN PHẨM ƯU ĐÃI</a>
+                </li>
+              </ul>
+
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="#!" class="text-dark text-decoration-none">Chăm sóc da nữ giới</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-dark text-decoration-none">Chăm sóc da nam giới</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-dark text-decoration-none">Chăm sóc da mụn</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-dark text-decoration-none">Chăm sóc da dầu</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-dark text-decoration-none">Chăm sóc da khô</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-dark text-decoration-none">Chăm sóc da hỗn hợp</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-dark text-decoration-none">Chăm sóc da lão hóa</a>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-auto p-4">
+              <h5 class="text-uppercase mb-0">KHÁCH HÀNG NÓI VỀ VIBA</h5>
+
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#!" class="text-dark text-decoration-none">Câu chuyện thương hiệu</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-dark text-decoration-none">Quá trình phát triển</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-dark text-decoration-none">Câu chuyện thành phần</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-dark text-decoration-none">Nghiên cứu và công nghệ</a>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-3 p-4">
+              <h5 class="text-uppercase mb-0">TIN TỨC MỚI</h5>
+
+              <ul class="list-unstyled">
+                <li>
+                  <span>“Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                    the industry's.</span>
+                </li>
+                <li>
+                  <form>
+                    <div class="form-group">
+                      <input type="email" class="form-control" id="email">
+                    </div>
+                    <button type="submit" class="btn btn_size-s footer__btn-submit">Submit</button>
+                  </form>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </div>
+      </div>
+      <!-- Grid container -->
+    </footer>
+    <!--END footer -->
+  </div>
+  <!-- Shop ViBa -->
+</body>
+
+</html>

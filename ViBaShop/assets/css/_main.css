@@ -1,0 +1,57 @@
+/* trang chu */
+.middle__button--unselect{
+    background-color: transparent !important;
+    border: 1px solid var(--primary-color) !important;
+    color: var(--text-color) !important;
+    border-radius: 0 !important;
+}
+
+.middle__btn-links{
+    margin: 0 10rem;
+    padding: 0;
+}
+
+.middle__button{
+    margin-left: 10rem;
+}
+
+.top-nav__list li {
+    font-size: 1.2rem;
+}
+
+.hero {
+    background-image: url("../img/hero.jpg");
+    height: 477px;
+    position: relative;
+}
+
+.herro_title-2{
+    font-weight: 600;
+}
+
+.hero__body-text{
+    left: 101px;
+    bottom: 25px;
+    position: absolute;
+    max-width: 295px;
+}
+
+.hero__btn {
+    margin-top: 1rem;
+}
+
+.hero__body-chevron-btn{
+    width: 100%;
+    padding: 2.7rem;
+} 
+
+.hero__body-btn {
+    display: block;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    padding: 0.2rem;
+    background: rgba(255, 255, 255, 0.9);
+    margin-top: calc(25% - 3rem);
+    color: #939393;
+}
