@@ -144,3 +144,8 @@ input[type=email]{
 .form_btn-center{
     text-align: center !important;
 }
+
+.product__to-buy-item{
+    width: 233px;
+    height: 110px;
+}
