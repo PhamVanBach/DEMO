@@ -174,3 +174,19 @@ table tr td:last-child {
 .product__buy-footer-star{
     font-size: 0.8rem;
 }
+
+.product__to-buy-header {
+    margin-left: 1rem;
+    line-height: 0.8rem;
+}
+
+.product__buy-header-title{
+    font-size: 1rem;
+    color: #757575;
+}
+
+.product__buy-header-price{
+    font-size: 1rem;
+    color: var(--text-color);
+    font-weight: 700;
+}
