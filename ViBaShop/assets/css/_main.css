@@ -45,7 +45,7 @@
     padding: 2.7rem;
 } 
 
-.hero__body-btn {
+.product__in-maindy-btn {
     display: block;
     border-radius: 50%;
     width: 50px;
@@ -74,7 +74,7 @@
 .product__in-main{
     background-color: var(--white-color);
     width: 464px;
-    height: 332px;
+    height: 334px;
 }
 
 .main-product__content-left{
@@ -91,24 +91,35 @@
 }
 .product__gender-btn-link{
     width: 22rem;
-    height: 5.6rem; 
+    height: 5.8rem; 
     font-size: 1.2rem !important;
     padding-top: 2rem !important;
 }
 
-.product__women {
-    
-}
-.product__men {
-    
-}
-.product__to-buy {
-    
-}
-.product__to-buy {
-    
+.product__to-buy-item{
+    height: 111px;
+    padding: 0 !important;
 }
 
+.product__to-buy-header{
+    line-height: 1.2rem;
+}
+
+.product__buy-icon-link {
+    text-align: center;
+}
+
+.product__buy-icon-link > i{
+    font-size: 1.2rem;
+    color: var(--text-color);
+}
+
+.product__buy-icon-item--clicked{
+    background-color: var(--primary-color) !important;
+}
+.product__buy-icon-item--clicked > a > i{
+    color: var(--white-color);
+}
 .product__gender-list{
     list-style-type: none;
     padding: 0;
@@ -132,14 +143,6 @@
 
 .product__gender-list{
     margin-top: 3rem;
-}
-
-.product__gender-item--selected{
-    background-color: var(--primary-color);
-}
-
-.product__gender-item--selected a{
-   color: var(--white-color);
 }
 
 table {
@@ -170,6 +173,7 @@ table tr td:last-child {
     border: 1px solid rgba(0, 0, 0, 1);
     color: #666;
 }
+
 
 .product__buy-footer-star{
     font-size: 0.8rem;

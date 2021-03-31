@@ -149,13 +149,13 @@
     <div class="modal">
         <div class="modal_overlay"></div>
 
-        <div class="modal_body">
-            <div class="modal_inner">
-                <!-- authen form -->
-                <div class="auth-form">
+        <div class="modal_body">       
+            <!-- authen form -->
+            <div class="auth-form">
+                <div class="auth-form__container">
                     <div class="auth-form__header">
-                        <div class="auth-form__heading"></div>
-                        <div class="auth-form__switch-btn"></div>
+                        <h3 class="auth-form__heading">Đăng ký</h3>
+                        <span class="auth-form__switch-btn">Đăng nhập</span>
                     </div>
                     <div class="auth-form_form">
                         <div class="auth-form__group">
@@ -163,43 +163,46 @@
                         </div>
 
                         <div class="auth-form__group">
-                            <input type="text" class="auth-form__input" placeholder="Mật khẩu của bạn">
+                            <input type="password" class="auth-form__input" placeholder="Mật khẩu của bạn">
                         </div>
 
                         <div class="auth-form__group">
-                            <input type="text" class="auth-form__input" placeholder="Nhập lại mật khẩu">
+                            <input type="password" class="auth-form__input" placeholder="Nhập lại mật khẩu">
                         </div>
                     </div>
 
                     <div class="auth-form__asign">
                         <p class="auth-form__policy-text">
                             Bằng việc đăng kí bạn đã đồng ý với chúng tôi về
-                            <a href="" class="auth-form__policy-link">Điều khoản và dịch vụ</a> &
-                            <a href="" class="auth-form__policy-link">Chính sách và bảo mật</a>
+                            <a href="" class="auth-form__text-link">Điều khoản và dịch vụ</a> &
+                            <a href="" class="auth-form__text-link">Chính sách và bảo mật</a>
                         </p>    
                     </div>
 
                     <div class="auth-form__controls">
-                        <button class="btn">
-                            
+                        <button class="btn btn--normal auth-form__control-back">
+                            TRỞ LẠI
                         </button>
                         <button class="btn btn--primary">
-
+                            ĐĂNG KÝ
                         </button>
-                    </div>      
-                    
-                    <div class="auth-form__socials">
-                        <a href="" class="btn btn--with-icon">
-                            <i class="fab fa-facebook"></i>
-                            Kết nối với Facebook
-                        </a>
-
-                        <a href="" class="btn btn--with-icon">
-                            <i class="fab fa-google"></i>
-                            Kết nối với Google
-                        </a>
-                    </div> 
+                    </div>            
                 </div>
+                <div class="auth-form__socials">
+                    <a href="" class="btn btn--size-s btn--with-icon auth-form__socials--facebook">
+                        <i class="auth-form__socials-icon fab fa-facebook"></i>
+                        <span class="auth-form__socials-title">
+                            Kết nối với Facebook
+                        </span>
+                    </a>
+
+                    <a href="" class="btn btn--size-s btn--with-icon auth-form__socials--google">
+                        <i class="auth-form__socials-icon fab fa-google"></i>
+                        <span class="auth-form__socials-title">
+                            Kết nối với Google
+                        </span> 
+                    </a>
+                </div> 
             </div>
         </div>
     </div>

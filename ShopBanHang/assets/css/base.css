@@ -3,6 +3,7 @@
     --white-color: #fff;
     --black-color: #000;
     --text-color: #333;
+    --border-color: #dbdbdb;
 }
 
 * {
@@ -46,4 +47,66 @@ html {
     to{
         opacity: 1;
     }
+}
+
+/* Modal */
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+}
+
+.modal_overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal_body {
+    position: relative;
+    margin: auto;
+    z-index: 1;
+    /* border-radius: 5px; */
+}
+
+/* //button style */
+
+.btn {
+    min-width: 142px;
+    height: 34px;
+    text-decoration: none;
+    border: none;
+    border-radius: 2px;
+    font-size: 1.5rem;
+    padding: 0 12px;
+    color: var(--text-color);
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn.btn--normal:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.btn.btn--primary {
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+
+.btn.btn--disable {
+    color: var(--white-color);
+    cursor: default;
+    background-color: #f3836c;
+    outline: none;
+} 
+
+.btn--size-s{
+    height: 32px;
+    font-size: 12px;
+    padding: 0 8px;
 }
