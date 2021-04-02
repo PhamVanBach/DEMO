@@ -45,7 +45,7 @@
     padding: 2.7rem;
 } 
 
-.product__in-maindy-btn {
+.hero__body-btn {
     display: block;
     border-radius: 50%;
     width: 50px;
@@ -73,8 +73,8 @@
 }
 .product__in-main{
     background-color: var(--white-color);
-    width: 464px;
-    height: 334px;
+    max-width: 464px;
+    max-height: 334px;
 }
 
 .main-product__content-left{
@@ -106,7 +106,9 @@
 }
 
 .product__buy-icon-link {
+    display: block;
     text-align: center;
+    margin: auto;
 }
 
 .product__buy-icon-link > i{
@@ -164,6 +166,10 @@ table tr td:last-child {
     border-right: 0;
 }
 
+.product__to-buy-img{
+    padding-left: 10px;
+}
+
 .product__buy-icon-item {
     display: block;
     width: 2.1rem;
@@ -193,4 +199,21 @@ table tr td:last-child {
     font-size: 1rem;
     color: var(--text-color);
     font-weight: 700;
+}
+
+
+/* product main news */
+.main-product-news {
+    color: #757575;
+    font-weight: 400;
+    padding: 0 3rem;
+}
+
+.main-product__news-item {
+   
+}
+
+.main-product__news-image-link > img{
+    padding: 0;
+    width: 100%;
 }
