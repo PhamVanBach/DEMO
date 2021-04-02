@@ -88,7 +88,15 @@
 .product__women-img{
     width: 22rem;
     height: 27.5rem;
+    padding: 0;
 }
+
+.product__women-img ~ img {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
 .product__gender-btn-link{
     width: 22rem;
     height: 5.8rem; 
@@ -180,6 +188,14 @@ table tr td:last-child {
     color: #666;
 }
 
+
+.product__gender-item--selected {
+    background-color: var(--primary-color);
+}
+
+.product__gender-item--selected a {
+    color: var(--white-color);
+}
 
 .product__buy-footer-star{
     font-size: 0.8rem;
