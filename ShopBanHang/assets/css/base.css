@@ -25,6 +25,7 @@ html {
     box-sizing: border-box;
 }
 
+/* //responsive */
 .grid{
     width: 1200px;
     max-width: 100%;/*giảm kích thước của màn hình về 1200*/
@@ -39,6 +40,21 @@ html {
     display: flex;
     flex-wrap: wrap;/*những thẻ được chứa cùng nằm trên 1 hàng ngang
     nếu quá width của row sẽ nhảy xuống hàng*/
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+/* test grid  */
+.grid__column-2 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 16.6667%;
+}
+
+.grid__column-10 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 83.3334%;
 }
 
 /* ================Animation==================== */
