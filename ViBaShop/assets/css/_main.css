@@ -74,7 +74,15 @@
 .product__in-main{
     background-color: var(--white-color);
     max-width: 464px;
-    max-height: 334px;
+    max-height: 350px;
+}
+
+.product__gender {
+    height: 334px;
+}
+
+.product__to-buy {
+    height: 334px;
 }
 
 .main-product__content-left{
@@ -223,13 +231,85 @@ table tr td:last-child {
     color: #757575;
     font-weight: 400;
     padding: 0 3rem;
+
 }
 
-.main-product__news-item {
-   
+.main-product__news-body {
+    height: 350px !important;
 }
+.main-product__news-main-content {
 
-.main-product__news-image-link > img{
-    padding: 0;
     width: 100%;
+}
+
+.main-product__news-image-link {
+    width: 100%;
+}
+
+.main-product__news-image-link img {
+    width: 100%;
+}
+
+.main-product__news-image {
+    height: 228px;
+    width: 100%;
+ }
+
+ .main-product__news-text {
+    padding: 0 18px;
+ }
+ .main-product__news-text-title {
+     color: var(--text-color);
+ }
+
+ .main-product__news-text-content {
+     color: rgb(104, 103, 103);
+     font-size: 1.1rem;
+ }
+ .main-product__news-footer {
+     justify-content: space-between;
+     background-color: transparent;
+     padding: 0 18px;
+ }
+
+ .main-product__news-footer-left {
+     color: #999;
+ }
+
+.main-product__news-footer-reaction-heart {
+    padding: 0 8px 0 0;
+}
+
+.main-product__news-footer-next {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    padding: 0;
+    font-weight: 500;
+}
+
+.main-product__news-text-title {
+    padding: 10px 0 0 0;
+}
+
+.main-product__news-footer-date {
+    padding-right: 18px;
+}
+
+.main-product__news-seprate{
+    width: 100%;
+    border-top: 1px solid rgba(0, 0, 0, 0.09);
+    padding-top: 5px;
+}
+
+.main-product__news-image--small {
+    height: 108px!important;
+}
+
+.main-product__news-main-content {
+    padding-right: 5px;
+}
+
+.main-product__news-body-middle {
+    margin: 10px 0 !important;
 }
