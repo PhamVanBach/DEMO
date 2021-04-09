@@ -119,8 +119,8 @@ html {
     font-size: 1.5rem;
     padding: 0 12px;
     color: var(--text-color);
-    background-color: transparent;
-    display: flex;
+    background-color: var(--white-color);
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     line-height: 1.6rem;
@@ -145,4 +145,58 @@ html {
     height: 32px;
     font-size: 12px;
     padding: 0 8px;
+}
+
+/* selction */
+.select-input {
+    position: relative;
+    min-width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--white-color);
+    height: 34px;
+    padding: 8px 16px;
+    border-radius: 2px;
+}
+
+.select-input:hover .select-input__list{
+    display: block;
+}
+
+.select-input__label {
+    font-size: 1.4rem;
+    color: var(--text-color);
+}
+
+.select-input__icon {
+    font-size: 1rem;
+    color: var(--text-color);
+}
+
+/* .select-input__icon:hover {
+    cursor: pointer;
+} */
+
+.select-input__list {
+    position: absolute;
+    top: 26px;
+    background-color: var(--white-color);
+    width: 100%;
+    right: 0;
+    padding: 8px 16px;
+    list-style: none;
+    display: none;
+    animation: FadeIn ease-in 0.2s;
+}
+
+.select-input__item-link {
+    text-decoration: none;
+    font-size: 1.4rem;
+    padding: 4px;
+    color: var(--text-color);
+}
+
+.select-input__item-link:hover {
+    color: var(--primary-color);
 }

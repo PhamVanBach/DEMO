@@ -858,12 +858,17 @@
     background-color: rgba(0, 0, 0, 0.05);
 }
 
-.category {
-    background-color: var(--white-color);
-    border-radius: 2px;
+.app__container-content {
+    padding-top: 36px;
 }
 
-.category__heading {
+.category {
+    background-color: var(--white-color);
+    border-radius: 2px; 
+}
+
+.category__heading { 
+    margin-top: 0;
     padding: 8px 16px;
     font-size: 16px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
@@ -926,4 +931,110 @@
 .category-item__link:hover {
     right: -4px;
     color: var(--primary-color);
+}
+/* sắp xếp tìm kiếm */
+
+.home-fillter {
+    display: flex;
+    align-items: center;
+    background-color: #ededed;
+    padding: 12px 24px;
+    border-radius: 2px;
+}
+
+.home-fillter__page {
+    display: flex;
+    
+}
+
+.home-fillter__label {
+    font-size: 1.4rem;
+    margin-right: 16px;
+}
+
+.home-fillter__btn {
+    margin-right: 12px;
+}
+
+.home-fillter__page {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.home-fillter__page-current {
+    color: var(--primary-color);
+}
+
+.home-fillter__page-num {
+    font-size: 1.4rem;
+    padding-right: 12px;
+}
+
+
+.home-fillter__page-control {
+    border-radius: 2px;
+    overflow: hidden;
+    width: 72px;
+ 
+    display: flex;
+    align-items: center;
+}
+
+.home-fillter__page-btn {
+    flex: 1;   
+    height: 36px;
+    background-color: var(--white-color);
+    display: flex;
+    text-decoration: none;
+}
+
+.home-fillter__page-btn--disable {
+    background-color: #f9f9f9;
+}
+
+.home-fillter__page-btn--disable 
+.home-fillter__page-icon {
+    color: #ccc;
+}
+
+.home-fillter__page-btn:first-child {
+    border-right: 1px solid #eee;
+}
+
+.home-fillter__page-icon {
+    margin: auto;
+    color: #555;
+}
+
+.home-product-item__rating {
+
+}
+
+.home-product-item__origin {
+
+}
+
+.home-product-item__origin-brand {
+
+}
+
+.home-product-item__origin-name {
+
+}
+
+.home-product-item__favourite {
+
+}
+
+.home-product-item__sale-off {
+
+}
+
+.home-product-item-sale-off__percent {
+
+}
+
+.home-product-item-sale-off__label {
+
 }
