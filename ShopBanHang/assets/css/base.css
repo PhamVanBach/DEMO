@@ -1,17 +1,24 @@
 :root {
-    --primary-color: #f6422e;
+    --primary-color: #f85745;
     --white-color: #fff;
     --black-color: #000;
     --text-color: #333;
     --border-color: #dbdbdb;
 
+    --header-sort-bar-height: 46px;
     --header-height: 120px;
     --navbar-height: 34px;
     --hearder-with-search-height: calc(var(--header-height) - var(--navbar-height));
+    --star-rated: rgb(255, 206, 62);
 }
 
 * {
     box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
 }
 
 html {
@@ -26,34 +33,29 @@ html {
 }
 
 /* //responsive */
-.grid{
-    width: 1200px;
-    max-width: 100%;/*giảm kích thước của màn hình về 1200*/
-    margin: 0 auto;/*Căn giữa khối khi nằm trong khối khác*/
-}
-
-.grid__full-width {
-    width: 100%;
-}
 
 .grid__row {
     display: flex;
     flex-wrap: wrap;/*những thẻ được chứa cùng nằm trên 1 hàng ngang
     nếu quá width của row sẽ nhảy xuống hàng*/
-    margin-left: -12px;
-    margin-right: -12px;
+    margin-left: -5px;
+    margin-right: -5px;
 }
 
 /* test grid  */
 .grid__column-2 {
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 5px;
+    padding-right: 5px;
     width: 16.6667%;
 }
-
+.grid__column-2-4 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 20%;
+}
 .grid__column-10 {
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 5px;
+    padding-right: 5px;
     width: 83.3334%;
 }
 
